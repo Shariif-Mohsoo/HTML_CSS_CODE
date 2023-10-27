@@ -1,0 +1,139 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: violet;
+    position: relative;
+}
+.form_body
+{
+    background-color: red;
+    width: 80%;
+    margin: 5% auto;
+    padding: 20px;
+}
+.form_body h1
+{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.form_group
+{
+    background-color: blue;
+    padding: 20px;
+}
+.form_group label
+{
+    display : block;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form_group input
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: cursive;
+}
+.form_body a
+{
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    font-family:serif;
+    letter-spacing: .2em;
+    display: block;
+    margin-top: 20px;
+}
+.button
+{
+    background-color: green;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.button:hover
+{
+    cursor: pointer;
+    background-color: darkviolet;
+    color: violet;
+    box-shadow: 5px 5px 2px darkviolet;
+}
+.circle_left
+{
+    position: absolute;
+    top: -1%;
+    display: inline-block;
+}
+.circle_left li
+{
+    height: 100px;
+    width: 100px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin: 75px 8px;
+    background-color: white;
+    animation: circle 10s infinite linear;
+
+}
+
+.circle_right
+{
+    position: absolute;
+    top: -1%;
+    right: .2%;
+    /* background-color: beige; */
+    display: inline-block;
+}
+.circle_right ul,.circle_left ul
+{
+    list-style: none;
+}
+.circle_right li
+{
+    height: 100px;
+    width: 100px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin: 75px 8px;
+    background-color: white;
+    opacity: 0;
+    animation: circle 5s infinite linear;
+}
+@keyframes circle 
+{
+    0%
+    {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%
+    {
+        opacity: .5;
+        transform: scale(.5) rotate(360deg);
+        background-color: antiquewhite;
+        border: 2px dotted white;
+    }
+    90%
+    {
+        opacity: .8;
+        transform: scale(.65) rotate(-360deg);
+        background-color: white;
+        border: 4px groove whitesmoke;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
